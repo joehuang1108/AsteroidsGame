@@ -7,14 +7,23 @@ public void setup()
 }
 public void draw() 
 {
+	background(0);
 	joe.move();
   	joe.show();
 }
 public void keyPressed()
 {
-	if (key == 'b')
+	if (key == 'd')
 	{
 		joe.turn(5);
+	}
+	if (key == 'a')
+	{
+		joe.turn(-5);
+	}
+	if (key == 'w')
+	{
+		joe.accelerate(0.05);
 	}
 }
 
