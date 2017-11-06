@@ -1,4 +1,6 @@
 public Spaceship joe = new Spaceship();
+public Star[] sky = new Star[400];
+
 public void setup() 
 {
   size(600,600);
