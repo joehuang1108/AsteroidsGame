@@ -5,7 +5,7 @@ class Spaceship extends Floater
 		corners = 4;  //the number of corners, a triangular floater has 3
       	int[] allX = {-8,16,-8,-2};
       	int[] allY = {-8,0,8,0};
-      	xCorners  = allX;
+      	xCorners  = allX;	
       	yCorners = allY;
       	myColor = 255;
       	myCenterX = 300;
