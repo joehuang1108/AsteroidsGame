@@ -7,7 +7,7 @@ class Asteroid extends Floater
       int[] allY = {0,8,8,0,-8,-8};
       xCorners  = allX;
       yCorners = allY;
-      myColor = #CFCFAD;
+      myColor = #DE0909;
       myCenterX = ((int)(Math.random()*900));
       myCenterY = ((int)(Math.random()*900)); 
       myDirectionX = 0;
@@ -18,6 +18,17 @@ class Asteroid extends Floater
       myDirectionY = ((int)(Math.random()*2-2)); //holds x and y coordinates of the vector for direction of travel
       myPointDirection = ((Math.random()*10)-10);
       spin = ((int)(Math.random()*9)-2);
+  } 
+  public void move()
+  {
+    rotate(spin);
+    if (spin == 0){spin =1;}
+    super.move();
+    if (myDirectionX == 0 || myDirectionY == 0)
+    {
+      myDirectionX = 1;
+      myDirectionY = 1;
+    } 
   }
   public void setX(int x){
       myCenterX = x;
