@@ -21,8 +21,8 @@ class Asteroid extends Floater
   } 
   public void move()
   {
-    rotate(spin);
-    if (spin == 0){spin =1;}
+    turn(spin);
+    if (spin == 0){spin = 1;}
     super.move();
     if (myDirectionX == 0 || myDirectionY == 0)
     {

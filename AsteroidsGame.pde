@@ -1,7 +1,6 @@
 public Spaceship joe = new Spaceship();
-public Star[] sky = new Star[100];ArrayList <Asteroid> rocks = new ArrayList <Asteroid>();
-double dist1, dist2;
-
+public Star[] sky = new Star[100]; ArrayList <Asteroid> rocks = new ArrayList <Asteroid>();
+double dist1;
 
 public void setup() 
 {
@@ -30,18 +29,18 @@ public void draw()
   {
     ast.show();
     ast.move();
-    dist2 = dist(ast.getX(), ast.getY(), joe.getX(), joe.getY());
+    dist1 = dist(ast.getX(), ast.getY(), joe.getX(), joe.getY());
   }
 }
 public void keyPressed()
 {
 	if (key == 'd')
 	{
-		joe.turn(5);
+		joe.turn(20);
 	}
 	if (key == 'a')
 	{
-		joe.turn(-5);
+		joe.turn(-20);
 	}
 	if (key == 'w')
 	{
