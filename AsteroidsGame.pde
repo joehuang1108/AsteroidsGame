@@ -9,7 +9,7 @@ public void setup()
   {
     sky[i] = new Star();
   }
-  for (int i=0; i< 20; i++){
+  for (int i=0; i< 10; i++){
       rocks.add(new Asteroid());
    }
   
@@ -44,11 +44,11 @@ public void keyPressed()
 	}
 	if (key == 'w')
 	{
-		joe.accelerate(0.5);
+		joe.accelerate(0.09);
 	}
 	if (key == 's')
 	{
-		joe.accelerate(-0.5);
+		joe.accelerate(-0.10);
 	}
 	if (key == 'e') //hyperspace
 	{

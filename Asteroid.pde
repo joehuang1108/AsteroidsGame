@@ -10,13 +10,9 @@ class Asteroid extends Floater
       myColor = #DE0909;
       myCenterX = ((int)(Math.random()*900));
       myCenterY = ((int)(Math.random()*900)); 
-      myDirectionX = 0;
-      myDirectionY = 0; //holds x and y coordinates of the vector for direction of travel   
       myPointDirection = ((Math.random()*10)-10); 
-      myCenterY = ((int)(Math.random()*900));
-      myDirectionX = ((int)(Math.random()*2)-2);
-      myDirectionY = ((int)(Math.random()*2-2)); //holds x and y coordinates of the vector for direction of travel
-      myPointDirection = ((Math.random()*10)-10);
+      myDirectionX = ((int)(Math.random()*2)-1);
+      myDirectionY = ((int)(Math.random()*2-1)); //holds x and y coordinates of the vector for direction of travel
       spin = ((int)(Math.random()*9)-2);
   } 
   public void move()
