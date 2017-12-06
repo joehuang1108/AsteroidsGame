@@ -1,5 +1,5 @@
 public Spaceship joe = new Spaceship();
-public Star[] sky = new Star[100]; ArrayList <Asteroid> rocks = new ArrayList <Asteroid>();
+public Star[] sky = new Star[100];  ArrayList <Asteroid> rocks = new ArrayList <Asteroid>();
 double dist1;
 
 public void setup() 
@@ -9,7 +9,7 @@ public void setup()
   {
     sky[i] = new Star();
   }
-  for (int i=0; i< 10; i++){
+  for (int i=0; i< 5; i++){
       rocks.add(new Asteroid());
    }
   
@@ -44,11 +44,11 @@ public void keyPressed()
 	}
 	if (key == 'w')
 	{
-		joe.accelerate(0.09);
+		joe.accelerate(0.3);
 	}
 	if (key == 's')
 	{
-		joe.accelerate(-0.10);
+		joe.accelerate(-0.30);
 	}
 	if (key == 'e') //hyperspace
 	{
